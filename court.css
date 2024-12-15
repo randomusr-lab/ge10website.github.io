@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat';
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), 
+        url("https://raw.githubusercontent.com/randomusr-lab/ge10website.github.io/refs/heads/main/Images/7ccf6fdf2915161ba8a00d1625322509%20(1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a {
+    text-decoration : none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 12px;
+}
+
+.links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.links li a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.links li a:hover {
+    color: #b9043b;
+}
+
+.links li a.active {
+    color: #b9043b;
+    border-bottom: 2px solid #b9043b;
+    font-weight: bold;
+}
+
+.firstbox, .secondbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.hover-container {
+    text-align: center;
+    width: 300px;
+    position: relative;
+    height: 100px; 
+    overflow: hidden;
+    background-color: rgba(300, 300, 220, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: height 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-container:hover {
+    height: 400px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hover-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(-20px); 
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    z-index: -1; 
+}
+
+.hover-container:hover .hover-image {
+    opacity: 1;
+    transform: translateY(0); 
+    z-index: 1;
+}
+
+.text-box {
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    position: relative; 
+    z-index: 2; 
+}
+
+.hover-container:hover .text-box {
+    color: #000; 
+}
+
+.extra-text {
+    display: block;
+    padding-top: 3px;
+    font-size: 14px;
+    color: black;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    position: relative; 
+    z-index: 1;
+}
+
+.hover-container:hover .extra-text {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.longtext {
+    padding: 10px;
+    font-size: 12.5px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    position: relative; 
+    z-index: 2; 
+}
+.topbox {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.infobox {
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}

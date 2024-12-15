@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabutanGe10 Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/castro-script-personal-use-only" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<div class="background-image">
+    <div class="name">
+        <p class="name1" href="">Dollen T. Gabutan</p>
+    </div>
+    <header class="header">
+        <h1 class="header-title">Welcome to my <br><span class="animated-text">Ge10 Journal</span></h1><br><hr>
+        <p class="description">
+            Hello, I’m Dollen, and this is my personal WPE (Whole-Person Education) journal.<br>
+            This platform reflects my journey of growth and discovery through the 5 C’s: Church, Court, Classroom, Community, and Culture.<br>
+            Each section highlights meaningful activities, experiences, and reflections that align with these dimensions of whole-person education.<br>
+            This journal is not just a record of my journey but also a reminder of how every experience shapes me - holistically—spiritually, intellectually, socially, and culturally.
+        <br><br><hr><br></p>
+        <div class="buttons">
+            <button type="button" data-link="classroom.html">Classroom</button>
+            <button type="button" data-link="court.html">Court</button>
+            <button type="button" data-link="church.html">Church</button>
+            <button type="button" data-link="culture.html">Culture</button>
+            <button type="button" data-link="community.html">Community</button>
+        </div>
+    </header>
+</div>
+
+<script>
+    document.querySelectorAll('.buttons button').forEach(button => {
+    button.addEventListener('click', () => {
+        window.location.href = button.getAttribute('data-link');
+    });
+    });
+    const animatedText = document.querySelector('.animated-text');
+        setInterval(() => {
+            animatedText.classList.add('animate');
+            setTimeout(() => {
+            animatedText.classList.remove('animate');
+        }, 1000);
+    }, 5000);
+</script>
+</body>
+</html>

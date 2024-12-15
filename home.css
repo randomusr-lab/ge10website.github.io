@@ -1,0 +1,118 @@
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(100, 50, 50);
+    color: #fff;
+    text-align: center;
+}
+.name1 {
+    font-family: 'Castro Script PERSONAL USE ONLY', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.name {                            
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.header {
+    width: 75%;
+    font-style: bold;
+    position: relative;
+}
+
+.header-title {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.header-title span {
+    position: relative;
+    display: inline-block;
+    color: rgb(68, 0, 40);
+}
+
+.header-title span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    background: #ff96b9;
+    transform: scaleX(0);
+    transform-origin: left right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header-title span.animate::after {
+    transform: scaleX(1);
+}
+
+.animated-text {
+    font-family: 'Castro Script PERSONAL USE ONLY', sans-serif;
+    font-style: bold;
+}
+.description {
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 20px;
+}
+    
+.background-image {
+    background: url('https://asset.gecdesigns.com/img/wallpapers/aesthetic-landscape-reflection-background-hd-wallpaper-sr10012410-1706502139247-cover.webp') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.action-buttons button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.action-buttons button:hover {
+    background: #e63670;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button {
+    background-color: rgba(75,0,75,0.5);
+    color: white;
+    border: 1.5px solid white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button:focus{
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
