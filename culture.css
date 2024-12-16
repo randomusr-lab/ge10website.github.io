@@ -47,7 +47,7 @@ nav {
     font-weight: bold;
 }
 
-.firstbox, .secondbox {
+.firstbox, .secondbox, .thirdbox {
     width: 100%;
     height: auto;
     display: flex;
